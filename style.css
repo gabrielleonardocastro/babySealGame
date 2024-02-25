@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.description {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+}
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 0;
+}
+.dive{
+    animation: dive 500ms;
+}
+@keyframes dive{
+    0%{top: 0;}
+    30%{top: 50px;}
+    70%{top: 50px;}
+    100%{top: 0px;}
+}
+#block{
+    width: 20px;
+    height: 40px;
+    background-color: blue;
+    position: absolute;
+    top: -20px;
+    left: 100%;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0% {left: 100%;}
+    80%{left: 10%}
+    100%{left: -20px;}
+}
