@@ -1,0 +1,1 @@
+the first version of the game is the one that worked, however when i tried to change the game to be in flexbox layout so anyone could play it on any screen, i broke a bunch of stuff and currently digging myself into a deeper hole trying to fix stuff. will not give up until its done properly.
